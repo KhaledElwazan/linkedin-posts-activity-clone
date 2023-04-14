@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent" android:layout_height="wrap_content"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:background="@color/white"
+                                   android:layout_marginBottom="10dp"
+                                   android:layout_marginTop="10dp"
+                                   app:cardElevation="0dp"
+                                   android:elevation="20dp" android:paddingBottom="10dp">
+
+    <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_gravity="top"
+                      android:gravity="top"
+                      android:orientation="horizontal">
+
+
+            <com.google.android.material.imageview.ShapeableImageView android:layout_width="80dp"
+                                                                      android:layout_weight="1"
+                                                                      android:id="@+id/profile_image"
+                                                                      android:layout_height="80dp"/>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:layout_weight="15"
+                          android:gravity="start"
+                          android:orientation="vertical" android:layout_margin="25dp"
+                          android:layout_gravity="start">
+
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:text="@string/dummy_user_handle" android:id="@+id/user_handle"
+                          android:textStyle="bold"
+                          android:textSize="20sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:id="@+id/job_title" android:text="@string/dummy_job_title" android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                          android:id="@+id/post_time" android:text="@string/dummy_post_time"/>
+
+            </LinearLayout>
+
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:src="@drawable/baseline_more_vert_24" android:backgroundTint="@color/white"
+                         android:id="@+id/card_option_button"/>
+
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/post_content"
+                  android:text="@string/dummy_post_text"/>
+
+        <View android:layout_width="match_parent" android:layout_height="2dp"
+              android:layout_margin="10dp"
+              android:background="@drawable/horizontal_line"/>
+
+
+        <GridLayout android:columnCount="4" android:rowCount="3" android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:backgroundTint="@color/white"
+                         android:src="@drawable/baseline_thumb_up_24" android:layout_columnWeight="1"
+                         android:layout_rowWeight="1"/>
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:backgroundTint="@color/white"
+                         android:src="@drawable/baseline_insert_comment_24" android:layout_columnWeight="1"
+                         android:layout_rowWeight="1"/>
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:backgroundTint="@color/white"
+                         android:src="@drawable/baseline_repeat_24" android:layout_columnWeight="1"
+                         android:layout_rowWeight="1"/>
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:backgroundTint="@color/white"
+                         android:src="@drawable/baseline_send_24" android:layout_columnWeight="1"
+                         android:layout_rowWeight="1"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/like" android:layout_columnWeight="1" android:layout_rowWeight="1"
+                      android:textAlignment="center"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/comment" android:layout_columnWeight="1" android:layout_rowWeight="1"
+                      android:textAlignment="center"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/repost" android:layout_columnWeight="1" android:layout_rowWeight="1"
+                      android:textAlignment="center"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/send" android:layout_columnWeight="1" android:layout_rowWeight="1"
+                      android:textAlignment="center"/>
+
+        </GridLayout>
+
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:gravity="center|start">
+
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:backgroundTint="@color/white"
+                         android:src="@drawable/baseline_bar_chart_24"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/post_impression_count"
+                      android:text="1,350" android:textSize="15sp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text=" impressions!" android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

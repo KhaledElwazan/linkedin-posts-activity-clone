@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">linkedin_app_clone</string>
+    <string name="dummy_user_handle">Khaled El Wazan</string>
+    <string name="dummy_job_title">Researcher and Assistant Lecturer</string>
+    <string name="dummy_post_time">1mo</string>
+    <string name="comment">Comment</string>
+    <string name="like">Like</string>
+    <string name="repost">Repost</string>
+    <string name="send">Send</string>
+    <string name="dummy_post_text">This is a dummy text. This is a dummy text. This is a dummy text. This is a dummy
+        text. This is a dummy text. This is a dummy text. This is a dummy text. This is a dummy text. This is a dummy
+        text. This is a dummy text. This is a dummy text. This is a dummy text. This is a dummy text. This is a dummy
+        text. This is a dummy text. This is a dummy text. This is a dummy text. This is a dummy text. This is a dummy
+        text.
+    </string>
+</resources>
